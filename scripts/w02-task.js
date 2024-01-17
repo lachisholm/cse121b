@@ -27,7 +27,7 @@ const imageElement = document.querySelector('#home img');
 
 // Assign the nameElement's innerHTML property the fullName variable value
 // Surround the fullName value with <strong> tags using a template literal
-nameElement.innerHTML = `<strong>${fullName}</srong>`;
+nameElement.innerHTML = `<strong>${fullName}</strong>`;
 
 // Use the textContent property to set the value of the element to the value of the variable currentYear
 yearElement.textContent = currentYear;
