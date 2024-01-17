@@ -1,21 +1,17 @@
 /* W02-Task - Profile Home Page */
 
 
-
 /* Step 1 - Setup type tasks - no code required */
 
 
-
 /* Step 2 - Variables */
-
 const fullName = 'Lora Chisholm';
-
 const currentYear = new Date().getFullYear();
-
 const profilePicture = 'images/mypic.jpg';
 
 
 /* Step 3 - Element Variables */
+const nameElement = document.getElementById('name');
 
 // I am using getElementById() method to retrieve the HTML element
 const foodElement = document.getElementById('food');
@@ -24,14 +20,14 @@ const foodElement = document.getElementById('food');
 const yearElement = document.querySelector('#year');
 
 //getting my pic from the image file
-const imageElement = document.getElementById('mypic.jpg')
+const imageElement = document.querySelector('#home img');
 
 
 /* Step 4 - Adding Content */
 
 // Assign the nameElement's innerHTML property the fullName variable value
 // Surround the fullName value with <strong> tags using a template literal
-nameElement.innerHTML = `<strong>${Lora Chisholm}</strong>`;
+nameElement.innerHTML = `<strong>${fullName}</srong>`;
 
 // Use the textContent property to set the value of the element to the value of the variable currentYear
 yearElement.textContent = currentYear;
@@ -42,7 +38,8 @@ imageElement.setAttribute('src', profilePicture);
 
 // Use the setAttribute method to set the alt property of the image element
 // Set its value to 'Profile image of [Insert Name Variable]' using a template literal
-imageElement.setAttribute('alt', `Profile image of ${mypic.jpg}`);
+imageElement.setAttribute('alt', `Profile image of ${fullName}`);
+
 
 /* Step 5 - Array */
 
@@ -50,7 +47,7 @@ imageElement.setAttribute('alt', `Profile image of ${mypic.jpg}`);
 const favoriteFoods = ['Pizza', 'Sushi', 'Chocolate', 'Burgers'];
 
 // Modify the HTML element with the id of food to display your favorite foods array
-foodElement.innerHTML = favoriteFoods.join('<br>');
+foodElement.innerHTML = favoriteFoods;
 
 // Declare and instantiate a variable to hold another single favorite food item
 const newFavoriteFood = 'Ice Cream';
@@ -60,20 +57,16 @@ favoriteFoods.push(newFavoriteFood);
 
 // Append the new array values onto the displayed content of the HTML element with the id of food
 // Use += operator and <br> for a line break
-foodElement.innerHTML += `<br>${newFavoriteFood}`;
+foodElement.innerHTML += `<br>${favoriteFoods}`;
 
 // Remove the first element in the favorite food array
 favoriteFoods.shift();
 
 // Append the array output showing the modified array, using a line break
-foodElement.innerHTML += '<br>' + favoriteFoods.join('<br>');
+foodElement.innerHTML += `<br>${favoriteFoods}`;
 
 // Remove the last element in the favorite food array
 favoriteFoods.pop();
 
 // Append the array output with this final modified favorite foods array
-foodElement.innerHTML += '<br>' + favoriteFoods.join('<br>');
-
-
-
-
+foodElement.innerHTML += `<br>${favoriteFoods}`;
