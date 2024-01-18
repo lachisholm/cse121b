@@ -7,47 +7,65 @@
 
 
 /* Step 2 - Variables */
-
+//Storing my full name
 const fullName = 'Lora Chisholm';
 
-const currentYear = new Date().getFullYear();
+//Getting the current year
+let currentYear = new Date().getFullYear();
 
-const profilePicture = 'images/mypic.jpg';
+//Storing the file path for my profile picture
+let profilePicture = 'images/mypic.jpg';
 
 
 /* Step 3 - Element Variables */
 
-// I am using getElementById() method to retrieve the HTML element
+// Element to display the favorite foods
 const foodElement = document.getElementById('food');
 
-// I am using querySelector() method to find the HTML element with the id 'year'
+// Element to display the current year
 const yearElement = document.querySelector('#year');
 
-//getting my pic from the image file
+// Element to display my profile picture
 const imageElement = document.getElementById('mypic.jpg')
+
+// Element to display my name
+const nameElement = document.getElementById('name')
 
 
 /* Step 4 - Adding Content */
 
 // Assign the nameElement's innerHTML property the fullName variable value
 // Surround the fullName value with <strong> tags using a template literal
-nameElement.innerHTML = `<strong>${FullName}</strong>`;
+//show my name with bold formatting
+nameElement.innerHTML = `<strong>${fullName}</strong>`;
 
-// Use the textContent property to set the value of the element to the value of the variable currentYear
+// Show the current year
 yearElement.textContent = currentYear;
 
 // Use the setAttribute method to set the src property of the image element
 // Set its value to the file path variable set in Step 2
+//MYNOTE****imageElement is like a box,(so it's like telling the box, "show the picture that is stored in the profilePicture") 'src stands for "source" it tells me where I find the picture it should show - so it's like saying hey box the source or location of the picture you should show is stored in the variable called profilePicture. Helps it know where to look.
+//If you want to change the picture, update the 'profilePicture' variable in the same file. Change the value inside the quotes to the new file path and name of the image.
+
+// Display my profile picture by setting its source
 imageElement.setAttribute('src', profilePicture);
 
 // Use the setAttribute method to set the alt property of the image element
 // Set its value to 'Profile image of [Insert Name Variable]' using a template literal
+
+// Set alternative text for the profile picture
 imageElement.setAttribute('alt', `Profile image of ${mypic.jpg}`);
+
+
+
 
 /* Step 5 - Array */
 
-// Declare an array variable to hold your favorite foods
-const favoriteFoods = ['Pizza', 'Sushi', 'Chocolate', 'Burgers'];
+// Array to store my favorite foods
+const favoriteFoods = ['Papa Murphys red sauce Vegtable Pizza', 'Avacodos', 'Loaded Salads', 'Salmon or Halibut', 'Sushi', 'Chocolate chips', 'Home-Made or In and Out Burgers'];
+
+//Displays the favorite food in the designated element. The designated element is an HTML element with the id 'food' const foodElement = document.getElementById('food');  This line of code retrieves the HTML element with the id 'food' and assigns it to the variable 'foodElement'. Later in the code, the favorite foods are displayed in this designated element using the foodElement.innerHTML = favoriteFoods.join('<br>');
+
 
 // Modify the HTML element with the id of food to display your favorite foods array
 foodElement.innerHTML = favoriteFoods.join('<br>');
