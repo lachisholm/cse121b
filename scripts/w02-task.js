@@ -71,7 +71,7 @@ const favoriteFoods = ['Pizza', 'Avacodos', 'Salad', 'Halibut', 'Sushi', 'Chocol
 foodElement.innerHTML = favoriteFoods;
 
 // Declare and instantiate a variable to hold another single favorite food item
-const newFavoriteFood = 'Ice Cream';
+const newFavoriteFood = 'Candy';
 
 // Add the value stored in this new variable to your favorite food array
 favoriteFoods.push(newFavoriteFood);
