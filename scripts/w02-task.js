@@ -77,7 +77,7 @@ favoriteFoods.push(newFavoriteFood);
 // Use += operator and <br> for a line break
 foodElement.innerHTML += `<br>${newFavoriteFood}`;
 
-// Remove the first element in the favorite food array
+// Remove the first element in the favorite food arraycom
 favoriteFoods.shift();
 
 // Append the array output showing the modified array, using a line break
