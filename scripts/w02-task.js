@@ -29,10 +29,7 @@ const foodElement = document.getElementById('food');
 const yearElement = document.querySelector('#year');
 
 // Element to display my profile picture
-const imageElement = document.getElementById('image');
-
-
-
+const imageElement = document.getElementById('#home image');
 
 /* Step 4 - Adding Content */
 
@@ -59,8 +56,6 @@ imageElement.setAttribute('src', profilePicture);
 imageElement.setAttribute('alt', `Profile image of ${fullName}`);
 
 
-
-
 /* Step 5 - Array */
 
 // Array to store my favorite foods
@@ -70,7 +65,7 @@ const favoriteFoods = ['Papa Murphys red sauce Vegtable Pizza', 'Avacodos', 'Loa
 
 
 // Modify the HTML element with the id of food to display your favorite foods array
-foodElement.innerHTML = favoriteFoods.join;
+foodElement.innerHTML = favoriteFoods;
 
 // Declare and instantiate a variable to hold another single favorite food item
 const newFavoriteFood = 'Ice Cream';
@@ -86,13 +81,13 @@ foodElement.innerHTML += `<br>${newFavoriteFood}`;
 favoriteFoods.shift();
 
 // Append the array output showing the modified array, using a line break
-foodElement.innerHTML += '<br>' + favoriteFoods.join('<br>');
+foodElement.innerHTML += '<br>${favoriteFoods}';
 
 // Remove the last element in the favorite food array
 favoriteFoods.pop();
 
 // Append the array output with this final modified favorite foods array
-foodElement.innerHTML += '<br>' + favoriteFoods.join('<br>');
+foodElement.innerHTML += '<br>${favoriteFoods}';
 
 
 
