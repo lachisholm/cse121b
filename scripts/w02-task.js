@@ -20,7 +20,7 @@ let profilePicture = 'images/mypic.jpg';
 /* Step 3 - Element Variables */
 
 // Element to display my name
-const nameElement = document.getElementById('name')
+const nameElement = document.getElementById('name');
 
 // Element to display the favorite foods
 const foodElement = document.getElementById('food');
@@ -29,7 +29,7 @@ const foodElement = document.getElementById('food');
 const yearElement = document.querySelector('#year');
 
 // Element to display my profile picture
-const imageElement = document.getElementById('mypic.jpg')
+const imageElement = document.getElementById('mypic.jpg');
 
 
 
