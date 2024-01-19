@@ -19,6 +19,9 @@ let profilePicture = 'images/mypic.jpg';
 
 /* Step 3 - Element Variables */
 
+// Element to display my name
+const nameElement = document.getElementById('name')
+
 // Element to display the favorite foods
 const foodElement = document.getElementById('food');
 
@@ -28,8 +31,7 @@ const yearElement = document.querySelector('#year');
 // Element to display my profile picture
 const imageElement = document.getElementById('mypic.jpg')
 
-// Element to display my name
-const nameElement = document.getElementById('name')
+
 
 
 /* Step 4 - Adding Content */
@@ -54,7 +56,7 @@ imageElement.setAttribute('src', profilePicture);
 // Set its value to 'Profile image of [Insert Name Variable]' using a template literal
 
 // Set alternative text for the profile picture
-imageElement.setAttribute('alt', `Profile image of ${mypic.jpg}`);
+imageElement.setAttribute('alt', `Profile image of ${fullName}`);
 
 
 
@@ -68,7 +70,7 @@ const favoriteFoods = ['Papa Murphys red sauce Vegtable Pizza', 'Avacodos', 'Loa
 
 
 // Modify the HTML element with the id of food to display your favorite foods array
-foodElement.innerHTML = favoriteFoods.join('<br>');
+foodElement.innerHTML = favoriteFoods.join;
 
 // Declare and instantiate a variable to hold another single favorite food item
 const newFavoriteFood = 'Ice Cream';
