@@ -29,7 +29,7 @@ const foodElement = document.getElementById('food');
 const yearElement = document.querySelector('#year');
 
 // Element to display my profile picture
-const imageElement = document.getElementById('#home image');
+const imageElement = document.getElementById('#home img');
 
 /* Step 4 - Adding Content */
 
