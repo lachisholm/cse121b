@@ -11,10 +11,10 @@
 const fullName = 'Lora Chisholm';
 
 //Getting the current year
-let currentYear = new Date().getFullYear();
+const currentYear = new Date().getFullYear();
 
 //Storing the file path for my profile picture
-let profilePicture = 'images/mypic.jpg';
+const profilePicture = 'images/mypic.jpg';
 
 
 /* Step 3 - Element Variables */
