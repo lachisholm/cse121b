@@ -58,28 +58,25 @@ imageElement.setAttribute('src', profilePicture);
 imageElement.setAttribute('alt', `Profile image of ${fullName}`);
 
 
-/* Step 5 - Array */
+//* Step 5 - Array */
 
-// Array to store my favorite foods
-const favoriteFoods = ['Pizza',  'Salad',  'Sushi', 'Chocolate','Burgers'];
-
-//Displays the favorite food in the designated element. The designated element is an HTML element with the id 'food' const foodElement = document.getElementById('food');  This line of code retrieves the HTML element with the id 'food' and assigns it to the variable 'foodElement'. Later in the code, the favorite foods are displayed in this designated element using the foodElement.innerHTML = favoriteFoods.join('<br>');
-
+// Declare an array variable to hold your favorite foods
+const favoriteFoods = ['Pizza', 'Sushi', 'Chocolate', 'Burgers'];
 
 // Modify the HTML element with the id of food to display your favorite foods array
 foodElement.innerHTML = favoriteFoods;
 
 // Declare and instantiate a variable to hold another single favorite food item
-const newFavoriteFood = 'Candy';
+const newFavoriteFood = 'Ice Cream';
 
 // Add the value stored in this new variable to your favorite food array
 favoriteFoods.push(newFavoriteFood);
 
 // Append the new array values onto the displayed content of the HTML element with the id of food
 // Use += operator and <br> for a line break
-foodElement.innerHTML += `<br>${newFavoriteFood}`;
+foodElement.innerHTML += `<br>${favoriteFoods}`;
 
-// Remove the first element in the favorite food arraycom
+// Remove the first element in the favorite food array
 favoriteFoods.shift();
 
 // Append the array output showing the modified array, using a line break
@@ -90,6 +87,3 @@ favoriteFoods.pop();
 
 // Append the array output with this final modified favorite foods array
 foodElement.innerHTML += `<br>${favoriteFoods}`;
-
-
-
