@@ -61,7 +61,7 @@ imageElement.setAttribute('alt', `Profile image of ${fullName}`);
 /* Step 5 - Array */
 
 // Array to store my favorite foods
-const favoriteFoods = ['Pizza', 'Avacodos', 'Salad', 'Halibut', 'Sushi', 'Chocolate chips',
+const favoriteFoods = ['Pizza', 'Avacodos', 'Salad', 'Halibut', 'Sushi', 'Chocolate',
 'Burgers'];
 
 //Displays the favorite food in the designated element. The designated element is an HTML element with the id 'food' const foodElement = document.getElementById('food');  This line of code retrieves the HTML element with the id 'food' and assigns it to the variable 'foodElement'. Later in the code, the favorite foods are displayed in this designated element using the foodElement.innerHTML = favoriteFoods.join('<br>');
