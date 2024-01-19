@@ -8,7 +8,7 @@
 
 /* Step 2 - Variables */
 //Storing my full name
-const fullName = 'Lora Chisholm';
+const fullName = 'Lora Ann Chisholm';
 
 //Getting the current year
 const currentYear = new Date().getFullYear();
