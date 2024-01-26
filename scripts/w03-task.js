@@ -14,8 +14,6 @@ function addNumbers() {
 
     const sumField = document.getElementById("sum");
     sumField.value = sum;
-
 }
 
 document.getElementByID("addNumbers").addEventListener("click",addNumbers)
-
