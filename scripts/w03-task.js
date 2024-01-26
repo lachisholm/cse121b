@@ -14,7 +14,9 @@ function addNumbers()
     const num2 = documnet.querySelector("#add2").value;
     const sum = add(num1, num2);
 
-    document.getElementById("sum").value = sum;
+    const sumField = document.getElementById("sum");
+    sumField.value = sum;
+    
 }
 
 document.getElementByID("addNumbers").addEventListener("click",addNumbers)
