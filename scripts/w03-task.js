@@ -17,7 +17,7 @@ function performAddition() {
 function performSubtraction() {
 
     // Get values from input fields
-    const num1 = parseFloat(document,getElementById("subtract1").value);
+    const num1 = parseFloat(document.getElementById("subtract1").value);
     const num2 = parseFloat(document.getElementById("subtract2").value);
 
     //Perform subtraction
@@ -32,7 +32,6 @@ function performMultiplication (){
     // Get values from input fields
     const num1 = parseFloat(document.getElementById("factor1").value);
     const num2 = parseFloat(document.getElementById("factor2").value);
-
 
     //Perform multiplication
     const product = num1 * num2;
@@ -65,10 +64,10 @@ function performDivision(){
 
 
 // Add event.listerners for arithmetic operations
-document.getElementById("addNumbers").addEventListener("click, performAddition");
-document.getElementById("subtractNumbers").addEventListener("click, performSubtraction");
-document.getElementById("multiplyNumbers").addEventListener("click, performMultiplication");
-document.getElementById("divideNumbers").addEventListener("Click, performDivision")
+document.getElementById("addNumbers").addEventListener("click", performAddition);
+document.getElementById("subtractNumbers").addEventListener("click", performSubtraction);
+document.getElementById("multiplyNumbers").addEventListener("click", performMultiplication);
+document.getElementById("divideNumbers").addEventListener("Click", performDivision);
 
 
 // Functions for Selection Structures
@@ -76,18 +75,18 @@ document.getElementById("divideNumbers").addEventListener("Click, performDivisio
 // Function to calculate total due based on subtotal and membership
 function calculateTotalDue() {
     // Get values from input fields
-    const subtotal = parseFloat(document.getElementById("subtotal").Value);
+    const subtotal = parseFloat(document.getElementById("subtotal").value);
     const isMember = document.getElementById("member").ariaChecked;
 
     // Calculate total due based on membership status
     const totalDue = isMember ? subtotal * 0.9 : subtotal;
 
     // Display the result
-    document.getElementById("total").textContent = '$ ${totalDue. toFixed(2)'};
+    document.getElementById("total").textContent = '$ ${totalDue. toFixed(2)}';
 
     // Add event listener for calculating total due
     document.getElementById("getTotal").addEventListener("click", calculateTotalDue);
-
+}
     // ---------- Functions for Array Methods
 
     // Sample array for array method demonstration
@@ -98,14 +97,14 @@ function calculateTotalDue() {
 
     // Function to filter odd numbers from the array
     function filterOddNumbers() {
-        const oddNumbers = sourceArray.filter(num => num % 2 !==0);
-        document.getElementById("odds").textCibtebt = oddNumbers.join(",");
+    const oddNumbers = sourceArray.filter(num => num % 2 !==0);
+    document.getElementById("odds").textCibtebt = oddNumbers.join(",");
     }
 
     //Function to filter even numbers from the array
     function filterEvenNumbers () {
-        const evenNumbers = sourceArray.filter(num => num % 2 ===0);
-        document.getElementById("evens").textContent = evenNumbers.join(",")
+    const evenNumbers = sourceArray.filter(num => num % 2 ===0);
+    document.getElementById("evens").textContent = evenNumbers.join(",")
     }
 
 // Function to calculate the sum of the array
@@ -115,11 +114,11 @@ function calculateSumOfArray() {
     }
 
 // Function to multiply each element in the array by 2 
-function multiplyArrayBytwo()
+function multiplyArrayBytwo(){
 
     const multipliedArray = sourceArray.map(num => num * 2);
     document.getElementById("multiplied").textcontent = multipliedArray.join(",");
-
+}
 
   
 // Function to calculate the sum of the arrary after multiplying each element by 2
@@ -132,8 +131,7 @@ function calculateSumOfMultipliedArray() {
 // Add event listeners for array methods
 
 document.getElementById("filterOdd").addEventListener("click", filterOddNumbers);
-  document.getElementById("filterEven").addEventListener("click", filterEvenNumbers);
-  document.getElementById("calculateSum").addEventListener("click", calculateSumOfArray);
-  document.getElementById("multiplyByTwo").addEventListener("click", multiplyArrayByTwo);
-  document.getElementById("calculateSumMultiplied").addEventListener("click", calculateSumOfMultipliedArray);
-
+document.getElementById("filterEven").addEventListener("click", filterEvenNumbers);
+document.getElementById("calculateSum").addEventListener("click", calculateSumOfArray);
+document.getElementById("multiplyByTwo").addEventListener("click", multiplyArrayByTwo);
+document.getElementById("calculateSumMultiplied").addEventListener("click", MultiplyArrayBytwo);
