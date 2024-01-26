@@ -2,8 +2,22 @@
 
 /* FUNCTIONS */
 /* Function Definition - Add Numbers */
-function add(number1, number2) {return number1 + number2};
 
+function add(num1,num2)
+{
+    return num1 +num2;
+}
+
+function addNumbers() 
+{
+    const num1 =document.getElementById("add1").value;
+    const num2 = documnet.querySelector("#add2").value;
+    const sum = add(num1, num2);
+
+    document.getElementById("sum").value = sum;
+}
+
+document.getElementByID("addNumbers").addEventListener("click",addNumbers)
 
 /* Function Expression - Subtract Numbers */
 const subtract = function (number1, number2) {return number1 -number2};
@@ -19,7 +33,7 @@ function divide(dividend, divisor) { return dividend / divisor};
 
 /* Decision Structure */
 
-document.querySelector('#addNumbers').addEventListener('Click','addNumbers')
+document.querySelector('#addNumbers').addEventListener('Click',addNumbers);
 
 function addNumbers() {
     let addNumber1 = Number(document.querySelector('#add1').value);
