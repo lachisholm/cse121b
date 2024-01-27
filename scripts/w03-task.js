@@ -143,9 +143,9 @@ function calculateTotalDue(){
     //Get the value from the # subtotal field and convert it to a number
     const subtotal = parseFloat(document.getElementById("subtotal").value);
 
-    // Check if the subtotal is less than or equal to 0, or it it's NAN, null, or undefined
+    // Check if the subtotal is less than or equal to 0, or it it's NaN, null, or undefined
 
-    if (subtotal <= 0 || isNAN(subtotal)) {
+    if (subtotal <= 0 || isNaN(subtotal)) {
         //set # subtotal
         document.getElementById("subtotal").value = "";
         //stop the function
@@ -161,7 +161,7 @@ function calculateTotalDue(){
     const totalDue = subtotal * discount;
 
     // Display the result
-    document.getElementById("total").textContent = '$${totalDue.toFixed(2)}';
+    document.getElementById("total").textContent = '$' + totalDue.toFixed(2);
 
  }
 
@@ -183,7 +183,7 @@ function calculateTotalDue(){
 
  // Function to filter even numbers from the array
  function filterEvenNumbers() {
-    const evenNumbers = numbersArrary.filter(number => number % 2 === 0);
+    const evenNumbers = numbersArray.filter(number => number % 2 === 0);
     document.getElementById("evens").textContent = evenNumbers.join(",");
 }
 
