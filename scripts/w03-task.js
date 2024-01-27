@@ -135,3 +135,4 @@ document.getElementById("filterEven").addEventListener("click", filterEvenNumber
 document.getElementById("calculateSum").addEventListener("click", calculateSumOfArray);
 document.getElementById("multiplyByTwo").addEventListener("click", multiplyArrayByTwo);
 document.getElementById("calculateSumMultiplied").addEventListener("click", MultiplyArrayBytwo);
+document.getElementById("divideNumbers").addEventListener("click", performDivision);
