@@ -76,7 +76,7 @@ document.getElementById("divideNumbers").addEventListener("click", performDivisi
 function calculateTotalDue() {
     // Get values from input fields
     const subtotal = parseFloat(document.getElementById("subtotal").value);
-    const isMember = document.getElementById("member").ariaChecked;
+    const isMember = document.getElementById("member").checked;
 
     // Calculate total due based on membership status
     const totalDue = isMember ? subtotal * 0.9 : subtotal;
@@ -133,6 +133,6 @@ function calculateSumOfMultipliedArray() {
 document.getElementById("filterOdd").addEventListener("click", filterOddNumbers);
 document.getElementById("filterEven").addEventListener("click", filterEvenNumbers);
 document.getElementById("calculateSum").addEventListener("click", calculateSumOfArray);
-document.getElementById("multiplyByTwo").addEventListener("click", multiplyArrayByTwo);
-document.getElementById("calculateSumMultiplied").addEventListener("click", MultiplyArrayBytwo);
+document.getElementById("multiplyByTwo").addEventListener("click", multiplyArrayBytwo);
+document.getElementById("calculateSumMultiplied").addEventListener("click", multiplyArrayBytwo);
 document.getElementById("divideNumbers").addEventListener("click", performDivision);
