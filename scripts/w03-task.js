@@ -125,7 +125,7 @@ function multiplyArrayBytwo(){
 
 function calculateSumOfMultipliedArray() {
     const sumOfMultipliedArray = sourceArray.map(num => num *2).reduce((acc, num) => acc + num, 0);
-     document.getElementById("sumOfMultiplied").textContent = sumOfMultipliedArray;
+    document.getElementById("sumOfMultiplied").textContent = sumOfMultipliedArray;
 }
 
 // Add event listeners for array methods
