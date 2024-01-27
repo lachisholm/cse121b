@@ -51,7 +51,7 @@ function performDivision(){
     // Check if the divisor is not zero to avoid division by zero
     if (divisor !== 0) {
 
-        const quotient = dividend /divisor;
+        const quotient = dividend / divisor;
 
         // Display the result
         document.getElementById("quotient").value = quotient.toFixed(2);
@@ -67,7 +67,7 @@ function performDivision(){
 document.getElementById("addNumbers").addEventListener("click", performAddition);
 document.getElementById("subtractNumbers").addEventListener("click", performSubtraction);
 document.getElementById("multiplyNumbers").addEventListener("click", performMultiplication);
-document.getElementById("divideNumbers").addEventListener("Click", performDivision);
+document.getElementById("divideNumbers").addEventListener("click", performDivision);
 
 
 // Functions for Selection Structures
