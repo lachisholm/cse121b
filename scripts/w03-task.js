@@ -149,7 +149,7 @@ function calculateTotalDue(){
         // Clear the input field to avoid displaying invalid data
         document.getElementById("subtotal").value = "";
         //stop the function execution to prevent further calculations
-        // on an invalid or non-numberic subtotalcompoun
+        // on an invalid or non-numberic subtotal
         return;
     }
 
