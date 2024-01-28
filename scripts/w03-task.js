@@ -98,7 +98,7 @@ function calculateTotalDue() {
     // Function to filter odd numbers from the array
     function filterOddNumbers() {
     const oddNumbers = sourceArray.filter(num => num % 2 !==0);
-    document.getElementById("odds").textCibtebt = oddNumbers.join(",");
+    document.getElementById("odds").textContent = oddNumbers.join(",");
     }
 
     //Function to filter even numbers from the array
@@ -117,7 +117,7 @@ function calculateSumOfArray() {
 function multiplyArrayBytwo(){
 
     const multipliedArray = sourceArray.map(num => num * 2);
-    document.getElementById("multiplied").textcontent = multipliedArray.join(",");
+    document.getElementById("multiplied").textContent = multipliedArray.join(",");
 }
 
   
@@ -207,8 +207,8 @@ function calculateSumOfMultipliedArray(){
 }
 
 // Add event listeners for array methods
-document.getElementByID("filterOdd").addEventListener("click", filterOddNumbers);
+document.getElementById("filterOdd").addEventListener("click", filterOddNumbers);
 document.getElementById("filterEven").addEventListener("click", filterEvenNumbers);
 document.getElementById("calculateSum").addEventListener("click", calculateSumOfArray);
 document.getElementById("multiplyByTwo").addEventListener("click", multiplyArrayByTwo);
-document.getElementById("calculateSumMultiplied").addEventListener("click, calculateSumOfMultipliedArray");
+document.getElementById("calculateSumMultiplied").addEventListener("click", calculateSumOfMultipliedArray);
