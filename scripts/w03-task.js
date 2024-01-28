@@ -146,9 +146,10 @@ function calculateTotalDue(){
     // Check if the subtotal is less than or equal to 0, or it it's NaN, null, or undefined
 
     if (subtotal <= 0 || isNaN(subtotal)) {
-        //set # subtotal
+        // Clear the input field to avoid displaying invalid data
         document.getElementById("subtotal").value = "";
-        //stop the function
+        //stop the function execution to prevent further calculations
+        // on an invalid or non-numberic subtotal
         return;
     }
 
@@ -163,7 +164,7 @@ function calculateTotalDue(){
     // Display the result
     document.getElementById("total").textContent = '$' + totalDue.toFixed(2);
 
- }
+}
 
  // Add event listener for calculating total due
  document.getElementById("getTotal").addEventListener("click", calculateTotalDue);
