@@ -202,7 +202,7 @@ function multiplyArrayByTwo(){
 // Function to calculate the sum of the array after multiplying each element by 2
 function calculateSumOfMultipliedArray(){
     const sumOfMultipliedArray = numbersArray.map(num => num *2).reduce((acc, num) => acc + num, 0);
-    document.getElementByID("sumOfMultiplied").textContent = sumOfMultipliedArray;
+    document.getElementById("sumOfMultiplied").textContent = sumOfMultipliedArray;
 
 }
 
